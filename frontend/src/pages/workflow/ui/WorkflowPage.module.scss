@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  color: #1f2937;
+}
+
+.header {
+  padding: 14px 20px;
+  border-bottom: 1px solid #d8dde6;
+  background: #fff;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(420px, 44%) 1fr;
+  flex: 1;
+  min-height: 0;
+}
+
+.tableHost,
+.diagramHost {
+  min-height: 0;
+  overflow: hidden;
+}

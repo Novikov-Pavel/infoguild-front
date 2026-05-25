@@ -1,0 +1,121 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: #f7f8fa;
+  border-right: 1px solid #d8dde6;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+}
+
+.search {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #c5ccd8;
+  border-radius: 4px;
+  font: 400 14px/1.4 'Open Sans', sans-serif;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #2f6fed;
+  color: #fff;
+  cursor: pointer;
+  font: 600 13px/1 'Open Sans', sans-serif;
+}
+
+.tableWrap {
+  flex: 1;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 400 13px/1.4 'Open Sans', sans-serif;
+}
+
+.thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #eef1f6;
+}
+
+.th {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #d8dde6;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.row:hover {
+  background: #edf2ff;
+}
+
+.rowSelected {
+  background: #dbe7ff;
+}
+
+.td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e8ebf0;
+  vertical-align: middle;
+}
+
+.nameInput {
+  width: 100%;
+  border: 1px solid transparent;
+  background: transparent;
+  font: inherit;
+}
+
+.nameInput:focus {
+  border-color: #2f6fed;
+  background: #fff;
+}
+
+.colorSwatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border: 1px solid #999;
+  vertical-align: middle;
+}
+
+.iconButton {
+  border: none;
+  background: transparent;
+  color: #b42318;
+  cursor: pointer;
+}
+
+.sortIcon {
+  margin-left: 4px;
+}
+
+.status,
+.error {
+  padding: 12px;
+}
+
+.error {
+  color: #b42318;
+}

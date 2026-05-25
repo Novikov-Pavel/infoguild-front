@@ -1,0 +1,88 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: #fff;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid #d8dde6;
+  font: 600 13px/1 'Open Sans', sans-serif;
+}
+
+.toolbar button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #c5ccd8;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.viewport {
+  position: relative;
+  flex: 1;
+  overflow: auto;
+  background:
+    linear-gradient(#f0f2f6 1px, transparent 1px) 0 0 / 20px 20px,
+    linear-gradient(90deg, #f0f2f6 1px, transparent 1px) 0 0 / 20px 20px;
+}
+
+.canvas {
+  position: relative;
+  width: 1200px;
+  height: 900px;
+}
+
+.arrows {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.arrow {
+  fill: none;
+  stroke: #6b7280;
+  stroke-width: 2;
+}
+
+.arrowHead {
+  fill: #6b7280;
+}
+
+.block {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 2px solid #4b5563;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 12%);
+  font: 600 12px/1.2 'Open Sans', sans-serif;
+  text-align: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.blockSelected {
+  border-color: #2f6fed;
+  box-shadow: 0 0 0 3px rgb(47 111 237 / 25%);
+}
+
+.status,
+.error {
+  padding: 12px;
+}
+
+.error {
+  color: #b42318;
+}
